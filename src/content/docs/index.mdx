@@ -1,36 +1,40 @@
 ---
-title: Welcome to Starlight
+title: LumaMC's Wiki
 description: Get started building your docs site with Starlight.
+lastUpdated: 2025-03-22
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: |
+    Welcome to Luma's Wiki! Here you can find information and guides 
+    about all of our features.
   image:
-    file: ../../assets/houston.webp
+    file: "../../assets/FishingLuma.png"
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Explore our Guides
+      link: /information/discord/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Join our Discord!
+      link: https://lumamc.net/chat
+      icon: discord
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## Wait... There's more!
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Join LumaMC!" icon="rocket">
+    Join Luma at `play.lumamc.net` or see our [guide](/information/joining/).
+  </Card>
+  <Card title="Support us!" icon="seti:bazel">
+    Want to support LumaMC? Check out our [store](https://store.lumamc.net) or
+    [vote](https://lumamc.net/vote) for us!
+  </Card>
+  <Card title="Want to contribute?" icon="pencil">
+    Check out our [guide](/information/contributing/) on how to contribute to the wiki.
+  </Card>
+  <Card title="More Luma..." icon="tiktok">
+    Did you know that we have a TikTok? Check it out [here](https://www.tiktok.com/@playlumamc)!
+  </Card>
 </CardGrid>

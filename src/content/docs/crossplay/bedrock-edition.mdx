@@ -1,0 +1,85 @@
+---
+title: "🌱 Bedrock Edition"
+description: "Joining LumaMC on Minecraft: Bedrock Edition"
+lastUpdated: 2025-02-22
+---
+
+import { Steps } from "@astrojs/starlight/components";
+import CenteredImage from "@/components/CenteredImage.astro";
+import addExternalServer from "@/assets/add-external-server-bedrock-edition.jpg";
+
+## Connecting
+
+To connect to Luma on **Minecraft: Bedrock Edition** go to the 'Servers' tab after clicking 'Play'.
+Once there, click 'Add Server'.
+
+<Steps>
+
+1. **In the 'Server Name' field:** Enter any name you'd like for the server, or "Luma" if you're
+   unsure.
+
+2. **In the 'Server Address' field:** Enter `play.lumamc.net`
+
+3. **In the 'Port' field:** Leave this field as `19132` or input the default port, `19132` if not
+   already set.
+
+</Steps>
+
+{/* prettier-ignore-start */}
+
+<CenteredImage
+  src={addExternalServer}
+  alt="Adding an external server on Minecraft: Pocket Edition (Bedrock)"
+  tailwind="w-8/10"
+/>
+{/* prettier-ignore-end */}
+
+## Limitations
+
+On LumaMC, we allow connections from **Minecraft: Bedrock Edition** clients using Geyser.
+Unfortunately, due to major differences between Bedrock and Java, there are features that are
+unavailable for Bedrock clients until Mojang adds support for these features, or changes them to be
+closer to their Java edition counterpart.
+
+Please see Geyser's official wiki for an in-depth list as to what is not available:
+https://wiki.geysermc.org/geyser/current-limitations/
+
+In addition to Geyser's official list, there are a few Luma-specific features which are not on this
+list. These include:
+
+- Unable to see unique water, folliage, and grass color in the Seasons world.
+- Unable to see RGB colors (Geyser will still do it's best to map RGB colors to default Minecraft
+  colors).
+- Unable to see wraps, furniture while in inventory, and possibly other texture pack items.
+- Unable to see player chat heads in chat.
+
+### Offhand Support
+
+Bedrock players are unable to put majority of items into their offhand natively. To force a specific
+item into your offhand as a bedrock player, hold the item in your main hand and use: `/offhand` (or
+`/ofh` for short).
+
+## Account Linking
+
+_Play from anywhere!_
+
+As stated before, Luma uses Geyser as its Bedrock packet converter. Because of this, players who own
+both a Minecraft: Bedrock Edition and Minecraft: Java Edition account are able to link their
+accounts and save their data together. Inventories, town status, playervaults, and anything else
+will be stored on the Java edition account and when logging in on a bedrock client, Geyser will
+mimic you being logged in as your Java edition account. To link accounts, visit
+[link.geysermc.org](https://link.geysermc.org/) or use `/linkaccount` in-game.
+
+## Did You Know?
+
+**Minecraft: Bedrock Edition** and **Minecraft: Java Edition** are now bundled together! That means
+if you own **Minecraft: Java Edition** you also have a copy of Bedrock edition you can use on any
+Windows 10/11 PC. Likewise, this means that if you own Bedrock edition on PC, you also own Java
+edition too! Additionally, Xbox Gamepass now includes both versions of Minecraft within it and
+you're able to play either copies on Xbox or PC while having a subscription.
+
+## Support
+
+Are you having trouble connecting, need to report a bug, or having issues with a specific client?
+Join our Discord server (https://lumamc.net/chat) and ask! Or feel free to make a ticket and our
+staff team will assist as soon as possible.
