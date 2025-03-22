@@ -1,0 +1,40 @@
+---
+title: "🛍️ Shops"
+description: "Info about the Auction House and Quickshop"
+sidebar:
+  order: 3
+---
+
+import CenteredImage from "@/components/CenteredImage.astro";
+import { Aside } from "@astrojs/starlight/components";
+import auctionHouse from "@/assets/auction-house.png";
+import chestshop from "@/assets/chest-shops.png";
+
+## Auction House
+
+<Aside>
+  To sell items on the auction auctionHouse. You must be at least ranked **Quantum** or **Arcane**!
+</Aside>
+
+The auction house is accessible with the `/ah` command. It allows players to sell items to other
+players for a specific price and is an alternative to chestshops (quickshop). Sell a held item by
+using: `/ah sell <price>`.
+
+<CenteredImage src={auctionHouse} alt="In-game Auction House" tailwind="w-82" />
+
+## Chestshops
+
+Chestshops, also known as quickshops, are a way to sell items to other players. To create a
+chestshop place a chest and left-click it with the item you want to sell. Follow the in-chat prompts
+to finish setting up your shop.
+
+<CenteredImage src={chestshop} alt="In-game Chestshops" tailwind="w-8/10" />
+
+### Searching for chestshops
+
+To search for chestshops **selling** a specific item, use `/ls <name|material>`. Likewise, to search
+for chestshops **buying** a specific item, use `/lb <name|material>`. Player set warps may also be
+used for finding shops too! Check out available player warps with `/pw`, or check out the
+[wiki page](/features/player-warps/) for them!
+
+**A list of available commands can be found by typing `/qs help` in-game!**

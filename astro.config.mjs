@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 const starlightConfig = {
   logo: { src: "@/assets/luma-logo.webp" },
   title: "Wiki",
-  customCss: ["./src/styles/custom.css", "./src/styles/tailwindmdx.css"],
+  customCss: ["./src/styles/starlight.css"],
   social: {
     github: "https://github.com/withastro/starlight",
   },

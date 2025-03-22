@@ -1,6 +1,7 @@
 ---
+import "@/styles/tailwind.css";
 import { Image } from "astro:assets";
 const { src, alt, tailwind } = Astro.props;
 ---
 
-<Image src={src} alt={alt} class={`justify-self-center ${tailwind}`} />
+<Image src={src} alt={alt} class={`justify-self-center rounded-sm ${tailwind}`} />

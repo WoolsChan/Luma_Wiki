@@ -1,0 +1,10 @@
+---
+import { Aside } from "@astrojs/starlight/components";
+
+const { what } = Astro.props;
+---
+
+<Aside type="caution">
+  This {what} is not completed and is still missing items! If you're an experienced player, please consider
+  <a href="/information/contributing">contributing</a> to this page.
+</Aside>

@@ -1,0 +1,165 @@
+---
+title: "🏡 Towny"
+description: "Guide on the Towny plugin"
+sidebar:
+  order: 4
+---
+
+import { LinkCard } from "@astrojs/starlight/components";
+
+Towny is the core of gameplay on LumaMC. It allows players to create towns, nations, and outposts,
+and manage them with a variety of commands. Towny is a complex plugin, but it's easy to get the hang
+of once you understand the basics!
+
+### With towns you can...
+
+<div class="list">
+
+- Claim land. (Unclaimed land still adheres to our griefing [rules](https://lumamc.net/rules)!)
+- Invite other players to be residents.
+- Set up a town bank.
+- Set up a town spawn.
+- Create embassies in other towns.
+- Create 'outposts' in the wilderness that allow you to claim more land. (You can also teleport to
+  their spawns!)
+- Set up a town tax.
+- Set up a town plot system.
+- Communicate and chat with other town members using `/tc`.
+
+</div>
+
+### With nations you can...
+
+<div class="list">
+
+- Invite towns to join your nation.
+- Set up a nation bank.
+- Set up a nation spawn.
+- Set up a nation tax.
+- Communicate and chat with other nation members using `/nc`.
+
+</div>
+
+### Town ranks
+
+Town ranks allow players to have different permissions within a town. For example, you can have a
+player who can invite others to the town, but not kick them. You can also have a player who can
+manage the town's bank, but not claim land. Ranks can added or removed from players using the
+`/t rank add <player>` command.
+
+<div class="list">
+
+Available **Town Ranks**:
+
+- Mayor
+- Co-Mayor
+- Helper
+- Sheriff
+- Default (All residents automatically have this rank and it cannot be applied or removed.)
+
+Available **Nation Ranks**:
+
+- King
+- Assistant
+- Helper
+- Default (All members automatically have this rank and it cannot be applied or removed.)
+
+</div>
+
+## Common Commands
+
+Here's a list of the most important towny commands! This list is not exhaustive, we recommend also
+checking out other online resources to find a **complete** list of Towny commands.
+
+<div class="list">
+
+- `/t <town?>` - Shows information about yours, or another town
+- `/res <player?>` - Shows resident information about you or another player.
+- `/t <town?> online` - Shows online residents for yours, or another town.
+- `/t leave` - Leave your town.
+- `/t rank add <player>` - Add a rank to a town member
+- `/t <town?> reslist` - Shows the list of residents in yours or another town.
+- `/t claim` - Claim a chunk for your town.
+- `/t delete` - Deletes your town (can only be done by the mayor!).
+- `/t unclaim` - Unclaims a chunk from the town,
+- `/t outlaw add/remove` - outlaws a specific person from the town, preventing them from entering.
+- `/t trust add <player>` - trusts a player to the town, allowing them to build and interact within
+  ALL claims of the town.
+- `/t join <town>` - Join a specific town, if it's public.
+- `/accept` - Accept a town invite.
+- `/deny` - Deny a town invite.
+- `/t spawn` - Teleport to your town's spawn.
+- `/t deposit <amount>` - Deposit money into your town's bank.
+- `/t withdraw <amount>` - Withdraw money from your town's bank.
+- `/tc` - Talk in town chat.
+- `/nc` - Talk in nation chat.
+
+</div>
+
+## Plots
+
+Plots are an important part of Towny and general claiming on Luma. Players often get stuck when
+trying to make specific town plots available to certain players or to the general public, so here's
+a quick guide on how to do that!
+
+#### What is a plot?
+
+A plot is a single chunk claimed by yours or another town. Plots can be sold, rented, or given to
+players to build on.
+
+**Allowing a plot to spawn mobs, have firespread, have explosions, or other destructive actions:**
+
+<div class="list">
+
+- `/plot toggle <explosion|fire|mobs|pvp|taxed>` - Toggles the specific setting on the plot.
+- `/plot set perm <ally|friend|nation|outsider|...> <build|destroy|switch|itemuse>` - Sets a
+  specific permission for a group of players on the plot.
+- `/plot group <group> <args>` - Sets an option for a plot **group**.
+- `/plot trust add <player>` - Trusts a player to the plot, allowing them to build and interact
+  within the plot.
+- `/plot trust remove <player>` - Removes a player's trust from the plot.
+- `/plot set reset` - Resets the plot to default settings.
+- `/plot claim` - Claims a plot for **you** disallowing other normal residents from interacting with
+  the plot.
+- `/plot unclaim` - Unclaims a plot for **you** allowing other normal residents to interact with the
+  plot again.
+- `/plot info` - Shows information about the plot you're standing in.
+
+</div>
+
+## Outposts
+
+Outposts can be used to claim areas not directly linked to your town! Here are some commands
+regarding outposts:
+
+- `/t outpost claim` - Allows the town to claim an outpost
+- `/t outpost list` - Lists all the towns outposts
+- `/plot set outpost` - Sets the plot as an outpost
+
+## Upkeep
+
+Town upkeep is a part of town maintenance. If you fail to pay your town upkeep, the town will fall
+into ruin! You can pay your towny upkeep by putting money into your town bank using
+`/t deposit <amount>`. Check your current upkeep costs with `/t`. See exact prices with
+`/towny prices`.
+
+## Managing Residents
+
+Managing residents is an important part of towny. Here are some guides on how to manage residents!
+
+### Inviting new residents
+
+You can invite players to your town using `/t invite <player>`! The player can accept using
+`/accept`. Invites will stay active until they are rejected or expire.
+
+## Chest Protections
+
+In addition to Towny's claim protections, we use **Bolt** to protect chests and other containers. By
+default **all** chests are protected inside towns and out in the wilderness. See our guide for chest
+protections below!
+
+<LinkCard
+  title="Chest Protections"
+  description="wiki.lumamc.net"
+  href="/features/chest-protections/"
+/>

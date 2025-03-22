@@ -1,3 +1,15 @@
+/* Workaround for Starlight docs 'invisible' list styles */
+/* Files which use tailwindcss must use a div with this class before lists */
+.list ul,
+.list ol {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+}
+
 /* Dark mode colors. */
 :root {
   --sl-color-accent-low: #271c3f;

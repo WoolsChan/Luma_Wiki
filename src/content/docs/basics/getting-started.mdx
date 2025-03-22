@@ -6,6 +6,8 @@ sidebar:
 ---
 
 import { LinkCard } from "@astrojs/starlight/components";
+import { CardGrid } from "@astrojs/starlight/components";
+import { Card } from "@astrojs/starlight/components";
 import CenteredImage from "@/components/CenteredImage.astro";
 import rtpMenu from "@/assets/rtp-menu.png";
 
@@ -36,3 +38,34 @@ can access the map by typing `/map` in-game or clicking the following the link c
   description="map.lumamc.net"
   href="https://map.lumamc.net"
 />
+
+## Chat channels
+
+LumaMC has a variety of chat channels to communicate with other players. In this section, we'll
+cover the different chat channels available to players.
+
+<CardGrid>
+  <Card title="Global" icon="comment">
+    Accessible with `/g`, players in-game and users in our Discord can see any messages sent in this
+    channel!
+  </Card>
+  <Card title="Local" icon="comment-alt">
+    Accessible with `/lc`, players in-game can see messages sent in this channel within a 100 block
+    radius.
+  </Card>
+  <Card title="Town" icon="seti:twig">
+    Accessible with `/tc`, online members of your town can see messages sent in this channel.
+  </Card>
+  <Card title="Nation" icon="seti:ionic">
+    Accessible with `/nc`, online members of your nation can see messages sent in this channel.
+  </Card>
+  <Card title="Trade" icon="seti:yml">
+    Accessible with `/tr`, players in-game can see messages sent in this channel within a 100 block
+    radius.
+  </Card>
+  <Card title="Discord" icon="discord">
+    Accessible from in-game's global chat (`/g`) or from our [Discord](https://lumamc.net/chat)
+    server's `# 🎮┃in-game` channel. To speak in this channel from Discord, you must have your
+    Discord acount linked! See our guide on this [here](/information/discord/).
+  </Card>
+</CardGrid>

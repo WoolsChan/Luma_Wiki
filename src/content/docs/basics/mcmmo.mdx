@@ -1,0 +1,96 @@
+---
+title: "🏵️ mcMMO"
+description: "Info about mcMMO"
+sidebar:
+  order: 5
+---
+
+import { Aside } from "@astrojs/starlight/components";
+import NotCompleted from "@/components/NotCompleted.astro";
+import CenteredImage from "@/components/CenteredImage.astro";
+import mcmmoMenu from "@/assets/mcmmo-menu.png";
+
+mcMMO adds a skill system into Minecraft allowing the development of skills such as mining, fishing,
+cooking, and much much more! As these skills progress, players unlock special abilities and perks
+related to the specific skill set.
+
+## Skills
+
+mcMMO brings many benefits to the after enhancing your skill levels! Check `/mcmmo` for more
+information and a list of all benefits!
+
+<CenteredImage src={mcmmoMenu} alt="In-game mcMMO Menu" tailwind="w-80" />
+
+<div class="list">
+
+- `Mining` - The mining skill is dedicated to extracting valuable ore and stone yielding a larger
+  potential harvest from each ore, further augmented by the activation of specific skills.
+- `Woodcutting` - As your woodcutting skill advances, the odds of obtaining additional wood from
+  trees increase, and the duration of the tree feller ability extends.
+- `Herbalism` - Herbalism relates to breaking and planting crops, in late development granting
+  potential for auto drops, auto replants, and much much more.
+- `Excavation` - Involves digging blocks like sand or dirt, at high levels, can dig up treasures
+  like diamonds and other items.
+- `Fishing` - Fishing is a lucrative skill, offering valuable loot and increasing the chances of
+  landing rare catches. Additionally, the Shake ability allows players to gather drops from
+  creatures without engaging in combat.
+- `Unarmed` - The unarmed combat skill utilizes the player's bare hands as a formidable weapon,
+  providing numerous benefits such as disarming opponents, arrow deflection, and much more.
+- `Archery` - Archery focuses on causing damage through the use of bows and arrows.
+- `Swords` - Swords have to do with of course, swords! Adds Rupture effects to attacks and the
+  ability to block opponent hits.
+- `Axes` - The axe tool serves as a weapon. Provides critical hits and the ability to swiftly
+  penetrate armor. The active ability allows for dealing area-of-effect (AoE) damage.
+- `Taming` - Taming is a skill where wolves gain enhanced damage, defense, and other stats.
+- `Repair` - Mends tools and armor using iron blocks.
+- `Acrobatics` - Relates to fall damage. Has a chance to ignore, or minimize fall damage.
+- `Salvage` - Salvage recovers raw materials from armor and tools.
+- `Smelting` - Smelting, a subset of mining and repair, averages the parent skill levels to
+  determine effectiveness.
+- `Alchemy` - Alchemy is a diverse skill centered around potion-making. Leveling up is achieved
+  through brewing and potion-making.
+
+</div>
+
+## Special Abilities
+
+<NotCompleted what="skill list" />
+
+Each special ability needs a specific tool to work with the job, below listed are the ability, and
+then what tool is needed.
+
+- **Berserk (unarmed)** | None - Fist
+- **Green Thumb (Herbalism)** | None - Passive
+- **Giga Drill Breaker (Excavation)** | Shovel
+- **Green Terra (Herbalism)** | Hoe
+- **Tree Feller (Woodcutting)** | Axe
+- **Skull Splitter (Axe)** | Axe
+- **Super Breaker (Mining)** | Pickaxe
+- **Serrated Strike (Swords)** | Sword
+
+## Parties
+
+mcMMO introduces a party system that allows players to join together, share experience, and
+communicate using the `/party` (`/p`) command. Parties can be created by using
+`/party create <name>`, and players can join parties using `/party join <name>`. Players can also
+leave parties using `/party leave`.
+
+### Private parties
+
+By default, all parties are private and require an invite to join. To invite a player to your party,
+use `/party invite <player>`. To accept an invite, use `/party accept <player>`. To kick a player
+from your party, use `/party kick <player>`. To disband your party, use `/party disband`.
+
+## Common Commands
+
+<div class="list">
+
+- `/mcstats` - Displays your mcMMO stats.
+- `/mctop` - Displays the top mcMMO players.
+- `/mcability` - Displays your current ability.
+- `/mcrefresh` - Refreshes your ability cooldown.
+- `/party` - Displays party commands.
+- `/mcinfo <skill>` - Displays information about a specific skill.
+- `/mcinspect <player>` - Inspects another player's mcMMO stats.
+
+</div>
