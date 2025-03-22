@@ -2,3 +2,97 @@
 title: "🍺 Brewery"
 description: "Tutorial on the Brewery plugin"
 ---
+
+import CenteredImage from "@/components/CenteredImage.astro";
+import breweryRoom from "@/assets/brewing-room.jpg";
+import customFruit from "@/assets/brewing-custom-fruit.png";
+import cauldron from "@/assets/brewing-cauldron.png";
+import distill from "@/assets/brewing-distill.png";
+import barrels from "@/assets/brewing-barrel-sizes.png";
+
+Discover hidden alchemy recipes scattered across the different worlds. Add them to your recipe book
+and try to collect them all!
+
+Brew potions, age drinks, experiment with distillation, and explore a variety of after-effects!
+
+<CenteredImage src={breweryRoom} alt="Brewery Room" tailwind="w-160" />
+
+## Getting Recipes
+
+### Potion Recipes
+
+Potion recipes are hidden throughout different worlds and can be found in loot chests! Each recipe
+comes with a list of specific ingredients and instructions to help you craft its potion.
+
+To check your collection, grab a Recipe Book from the Brewmaster at `/brewing`!
+
+### Ingredients
+
+Potion crafting uses everything from common items like sugar to custom ingredients like fruits.
+Explore the world to gather what you need! Some may be easy to find, while others not so much.
+
+Breaking grass yields a chance to drop fruit seeds. These seeds can then be used to grow fruit
+plants, or may be used as potion ingredients.
+
+<CenteredImage src={customFruit} alt="Custom Fruit" tailwind="w-160" />
+
+## Supplies
+
+**Here are some items needed to create potions:**
+
+<div class="list">
+
+- Cauldron
+- Water
+- Brewing Stand
+- Clock
+
+</div>
+
+## Brewing Potions
+
+Get started by Placing a fire underneath a cauldron! Make sure to fill the cauldron with water. This
+will act as your base to brew potions.
+
+<CenteredImage src={cauldron} alt="Brewing Cauldron" tailwind="w-100" />
+
+Grab your recipe, and put all ingredients inside the cauldron as listed! Once all your ingredients
+are in the cauldron, simply right-click with the clock to start the timer!
+
+Once enough time has passed (as listed in your recipe) grab the cauldron beverage with water
+bottles!
+
+However, some recipes don't end here. Some still require you to age or distill the beverage!
+
+## Distilling
+
+To distill a drink, simply put them into an alchemy stand, and add glowstone dust. This should yield
+new drinks!
+
+<CenteredImage src={distill} alt="Distill Stand" tailwind="w-100" />
+
+## Aging Drinks
+
+To age drinks, you need to use a barrel.
+
+To create a barrel, simply place stairs in the same way as seen in the below pictures, and then
+place a sign on the bottom right corner with the words "barrel" and a message in chat should confirm
+the barrel's creation.
+
+To use the barrel, simply right-click on the barrel and place the drinks inside! Leave the drinks
+inside for as long as the recipe calls!
+
+After you put your drinks in barrels, you need to just wait! 
+1 "year" = 1 in-game day. If you overdo the drink or use the wrong type of wood, the drink is likely to spoil.
+
+<CenteredImage src={barrels} alt="Barrels" tailwind="w-160" />
+
+## Drunken Effects
+
+Drinking specific drinks may affect your alcohol percentage! Careful not to drink too much or you'll
+be stumbling around!
+
+## Still need help?
+
+Outside resources for Brewery can be found on the internet in the form on videos and guides! Check
+out https://brewery.lumamc.net/ for more information!
