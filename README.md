@@ -4,9 +4,8 @@
   </a>
 </p>
 
-# wiki
+# wiki [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
 > LumaMC's wiki source
-> [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
 ## This project is licensed under CC BY-NC-ND 4.0
