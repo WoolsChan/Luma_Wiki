@@ -5,24 +5,17 @@ import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 
 const starlightConfig = {
+  favicon: "./favicon.png",
   logo: { src: "@/assets/luma-logo.webp" },
   title: "Wiki",
   customCss: ["./src/styles/starlight.css"],
   social: {
-    github: "https://github.com/withastro/starlight",
+    github: "https://github.com/LumaLibre/wiki",
+    discord: "https://lumamc.net/chat",
+    tiktok: "https://www.tiktok.com/@playlumamc",
+    email: "mailto:stars@lumamc.net",
   },
   sidebar: [
-    // {
-    //   label: "Guides",
-    //   items: [
-    //     // Each item here is one entry in the navigation menu.
-    //     { label: "Example Guide", slug: "guides/example" },
-    //   ],
-    // },
-    // {
-    //   label: "Reference",
-    //   autogenerate: { directory: "reference" },
-    // },
     {
       label: "Information",
       autogenerate: { directory: "information" },
