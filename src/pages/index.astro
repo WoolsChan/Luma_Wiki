@@ -1,0 +1,57 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import fishingLuma from "@/assets/fishing-luma.png";
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import Link from "@/components/Link.astro";
+---
+
+<StarlightPage
+  frontmatter={{
+    title: "LumaMC's Wiki",
+    description:
+      "Welcome to Luma's Wiki! Here you can find information and guides about all of our features.",
+    template: "splash",
+    hero: {
+      tagline:
+        "Welcome to Luma's Wiki! Here you can find information and guides about all of our features.",
+      image: {
+        file: fishingLuma,
+      },
+      actions: [
+        {
+          text: "Explore our Guides",
+          link: "/information/joining/",
+          icon: "rocket",
+        },
+        {
+          text: "Join our Discord!",
+          link: "https://lumamc.net/chat",
+          icon: "discord",
+          variant: "minimal",
+        },
+      ],
+    },
+  }}
+>
+  <h2>Wait... There's more!</h2>
+
+  <CardGrid stagger>
+    <Card title="Join LumaMC!" icon="star">
+      Join Luma at `play.lumamc.net` or see our <Link title="guide" href="/information/joining/" />.
+    </Card>
+    <Card title="Support us!" icon="seti:bazel">
+      Want to support LumaMC? Check out our <Link title="store" href="https://store.lumamc.net" />
+      or <Link title="vote" href="https://lumamc.net/vote" /> for us!
+    </Card>
+    <Card title="Want to contribute?" icon="pencil">
+      Check out our <Link title="guide" href="/information/contributing/" /> on how to contribute to
+      the wiki.
+    </Card>
+    <Card title="More Luma..." icon="tiktok">
+      Did you know that we have a TikTok? Check it out <Link
+        title="here"
+        href="https://www.tiktok.com/@playlumamc"
+      />!
+    </Card>
+  </CardGrid>
+</StarlightPage>
