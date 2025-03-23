@@ -1,0 +1,63 @@
+---
+title: "🎨 ArtMap"
+description: "Learn about ArtMap, a plugin that allows you to create custom paintings in Minecraft."
+lastUpdated: 2025-03-22
+---
+
+import "@/styles/tailwind.css";
+import CenteredImage from "@/components/CenteredImage.astro";
+import { Card } from "@astrojs/starlight/components";
+import artmapMain from "@/assets/artmap-main.png";
+import artmapTools from "@/assets/artmap-tools.png";
+import artmapEasel from "@/assets/artmap-easel.png";
+import artmapCanvas from "@/assets/artmap-canvas.png";
+import artmapSavebrush from "@/assets/artmap-savebrush.png";
+
+Artmap allows you to create your own unique paintings to hang around!
+
+To get started, first type the command `/artmap` to access a menu that will display the tools, dyes,
+recipes, and other players' work!
+
+<CenteredImage src={artmapMain} alt="ArtMap Help Menu" tailwind="w-6/10" />
+
+## Dyes
+
+There are many many dyes you can use for your artwork! Check out the `/artmap` gui and you can look
+through all potential dyes!
+
+**Left-click** with the dye on the canvas to draw pixels.
+
+**Right-click** with the dye on the canvas to draw lines.
+
+## Tools
+
+<div class="list">
+
+- **Bucket** | Used to fill an area on the canvas.
+- **Coal** | Used to shade a color darker.
+- **Feather** | Used to lighten a color.
+- **Compass** | Flips the canvas.
+- **Sponge** | Left-click to grab a color, right-click to paint with the color.
+
+</div>
+
+<CenteredImage src={artmapTools} alt="ArtMap Tools" tailwind="w-7/10" />
+
+## Recipes
+
+Artmap tools can be crafted with unique recipes! Listed below are the items, their recipes, and what
+each does!
+
+<Card title="Easel" icon="puzzle">
+  Place down by right clicking. Is used to make artworks! Type `/art break` to break the stand, but
+  don't forget to save first!
+  <CenteredImage src={artmapEasel} alt="Easel Recipe" tailwind="w-32" />
+</Card>
+<Card title="Canvas" icon="open-book">
+  Place down on an easel to start painting!
+  <CenteredImage src={artmapCanvas} alt="Canvas Recipe" tailwind="w-32" />
+</Card>
+<Card title="Save Brush" icon="add-document">
+  Use while sitting at a canvas to save the artwork!
+  <CenteredImage src={artmapSavebrush} alt="Save Brush Recipe" tailwind="w-32" />
+</Card>
