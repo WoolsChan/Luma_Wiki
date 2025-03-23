@@ -38,6 +38,7 @@ const starlightConfig = {
 // https://astro.build/config
 export default defineConfig({
   site: "https://wiki.lumamc.net",
+  base: "wiki",
   integrations: [starlight(starlightConfig)],
 
   vite: {
