@@ -8,13 +8,20 @@ sidebar:
 
 import { Aside } from "@astrojs/starlight/components";
 
-LumaMC offers players the ability '/set home [desired home name]' at any location, allowing you to teleport there at any time with the command '/[home name]'.
+LumaMC offers players the ability '/set home <desired home name>' at any location, allowing you to teleport there at any time with the command '/<home name>'.
 At the beginning you will only have one home, but more can be obtained through in-game ranks or store ranks. 
 
-<Aside>
-  For a detailed list of perks on each rank, see `/ranks` in-game. For store ranks, visit our
-  [store](https://store.lumamc.net).
-</Aside>
+<div class="list">
+##Common Commands
+- '/set home <desired home name>' - Creates a home you can teleport to
+- '/<home name>' - Teleport to a home you've made
+- '/homes' - Shows a list of your saved homes
+- '/delhome <home name>' - Delete a saved home
+
+<div class="list">
+
+## Avaliable Homes by In-Game / Store Ranks
+**Please note:** Homes do not stack with in-game & store ranks.
 
 - **Origin** | 1 Home
 - **Genesis** | 2 Homes
@@ -30,3 +37,8 @@ At the beginning you will only have one home, but more can be obtained through i
 - **Eclipsed / Luminal** | 12 Homes
 - **Seraphic** | 25 Homes
 - **Ethereal** | 32 Homes
+
+<Aside>
+  For a detailed list of perks on each rank, see `/ranks` in-game. For store ranks, visit our
+  [store](https://store.lumamc.net).
+</Aside>
